@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html"> Home </a></li>
+      <li>
+        <a class="active" href="my story with art .html"> my story with art </a>
+      </li>
+      <li><a href="my drawings.html">my drawrings</a></li>
+      <li><a href="#contact"> </a></li>
+    </ul>
+    <!-- <div class="row">
+  <div class="column"> 
+    <img src="drawing2.jpg" alt="" style="width:20%">
+  </div>
+  <div class="column">
+    <img src="drawing3.jpg" alt="" style="width:20%">
+  </div>
+  <div class="column">
+    <img src="drawing4.jpg" alt="" style="width:20%" >
+  </div>
+</div>
+<img src="drawing1.jpg" alt="" width="60%">  -->
+
+    <hr />
+    <hr />
+
+    <div class="w3-content w3-display-container">
+      <div class="w3-display-container mySlides">
+        <img src="drawing1.jpg" alt="Image 1" style="width: 100%" />
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="drawing2.jpg" alt="Image 2" style="width: 100%" />
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="drawing3.jpg" alt="Image 3" style="width: 100%" />
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="drawing4.jpg" alt="Image 4" style="width: 100%" />
+      </div>
+
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">
+        &#10094;
+      </button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">
+        &#10095;
+      </button>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
